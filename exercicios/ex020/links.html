@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /* 
+        #  = id
+        .  = classe 
+        :  = pseudo element
+        :: = clildren
+        */
+        doby {
+            font-family: Arial, Helvetica, sans-serif;
+            /* text-decoration: underline; */
+        }
+        a {
+            color:rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited {
+            color:darkgreen;
+
+        } 
+        a:hover {
+            color:black;
+            text-decoration:underline;
+        }
+        a:active {
+            color:chartreuse;
+        }
+
+        .especial {
+            background-color: darkgreen;
+            color:white;
+        }
+
+        a::before {
+            content:'';
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            color: aquamarine;
+            font-weight:normal;
+        }
+
+            /* content: ' [link]'; 
+            text-decoration:none;
+            font-weight: normal;
+             color: rgba(186, 133, 235, 0.527); */
+        
+</style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/DiogoPugina/teste.git" target="_blank">Repositorio GitHub</a></li>
+        <li><a href=">https://youtube.com/cursoemvideo"class='especial'>Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Canal Curso em Video</a></li>
+        
+    </ul>
+</body>
+</html>
