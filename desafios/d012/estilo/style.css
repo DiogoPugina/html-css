@@ -14,18 +14,21 @@
     margin: 0px;
     padding: 0px;
     font-size: 1em;
+
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
     font-family: var(--fonte1);
+
 }
 
 header {
     background-color: black;
     color: white;
-    text-align: center;      
+    text-align: center;
+
 }
 
 header > h1 {
@@ -33,17 +36,20 @@ header > h1 {
     /*   text-transform: uppercase; (  1 opção para deixar tudo maiuscula ) */
     font-variant: small-caps; /*( 2 opção para deichar maiuscula porem deixa as primeira letras maiores )*/
     font-family: var(--fonte2);
-    font-size: 10vw; /* ( 10% da largura da tela ) */
+    font-size: 10vw; /* ( 10% da largura da tela, nao é a melhor maneira, e sim um recurso ) */
     /* font-size: 3.5; tambem pode ser usado */
 }
+
 header > p {
     padding-bottom: 50px;
+
 }
 
 header a, footer, a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
+
 }
 
 /*
@@ -55,6 +61,7 @@ a {
 
 header a:hover, footer a:hover {
     text-decoration: underline;
+
 }
 
 section {
@@ -83,7 +90,7 @@ section.imagem {
 
 section.imagem > p {
     display: inline-block;
-    padding: 5px;
+    padding: 5px; 
     background-color: rgba(0, 0, 0, 0.438);
 }
 
@@ -95,10 +102,12 @@ section#img01 {
 
 section#img02 {
     background-image: url('../imagens/background002.jpg');
-}   
+}
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding:10px;
+
 }
