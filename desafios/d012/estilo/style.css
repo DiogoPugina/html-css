@@ -67,7 +67,7 @@ header a:hover, footer a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 1.5em;
     padding-left: 30px;
     font-family: var(--fonte3);
     /*font-size: 1.2em; */
@@ -75,7 +75,7 @@ section {
 }
 
 section >p {
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
 }
 
 section.normal {
@@ -91,7 +91,8 @@ section.imagem {
 section.imagem > p {
     display: inline-block;
     padding: 5px; 
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.514);
+    
 }
 
 section#img01 {
