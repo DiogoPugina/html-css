@@ -12,7 +12,8 @@
 
         table {
             width:500px;
-            border-collapse:collapse;  
+            border-collapse:collapse;
+            position: relative;
         }
 
         td,th {
@@ -21,20 +22,21 @@
             
         }
 
-        tbody > tr:nth-child(odd) { /* 2n-1 */
-            background-color: white;
+        /*tbody > tr:nth-child(odd) { { odd & 2n-1 }as duas opcoes fazem parte do conjunto impares
+            background-color: rgba(255, 255, 255, 0.726);
+        }*/
 
-        }
-
-        tbody > tr:nth-child(even) { /* 2n */
+        tbody > tr:nth-child(even) { /* { even & 2n }  fazem parte de conjuntos pares */
             background-color: lightgray;
+            font-weight: bold;
         }
 
         caption {
-            font-size:1.5em;
+            font-size:1.4em;
             font-weight: bold;
             padding:10px;
-            background-color: lightgray;
+            background-color:darkgray;
+            color: white;
         }
 
         thead, tfoot{
