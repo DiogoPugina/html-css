@@ -12,73 +12,63 @@
         table {
             border-collapse: collapse;
         }
-
+        
         caption {
-            font-size: 1.3em;
-            font-weight: bold;
-            padding: 10px;
+            font-size: 1.5em;
+            margin: 10px;
         }
 
         th, td {
-            border:1px solid grey;
+            border: 1px solid black;
             padding: 10px;
-            
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Exercicios tabelas</h1>
+    <h1>Nomes e tabelas de filme</h1>
     <table>
-        <caption>
-            Filmes Favoritos 
-        </caption>
+        <caption>Listas de Usuarios</caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
-        <tbody>
+        <tfoot>
             <tr>
-                <th rowspan="3">Mulheres</th>
-                <td>Ana MAria</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
+                <th colspan="4" scope="row">Total</th>
+                <th>10000</th>
+            </tr>
+        </tfoot>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Allien</td>
+                <td>Thor</td>
+                <td>Vingadores</td>                
             </tr>
             <tr>
-                <td>Beatriz</td>
-                <td>O Exorcista</td>
-                <td>O Iluminado</td>
-                <td>It - A Coisa</td>
-            </tr>
-            <tr>
-                <td>Claudia</td>
-                <td>O Silêncio dos Inocentes</td>
-                <td>Psicose</td>
-                <td>Corra!</td>
-            </tr>
-            <tr>
-                <th rowspan="3">Homemns</thr>
-                <td>João</td>
+                <td>Maria Clara</td>
                 <td>Matrix</td>
-                <td>Clube da Luta</td>
+                <td>John Wick</td>
+                <td>Velocidade Maxima</td>
+            </tr>
+            <tr>
+                <td>Marcela Melo</td>
                 <td>Interestelar</td>
+                <td>Gravidade</td>
+                <td>Perdido em Marte</td>
             </tr>
             <tr>
-                <td>Pedro</td>
-                <td>O Poderoso Chefão</td>
-                <td>Scarface</td>
-                <td>Os Infiltrados</td>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>João Pedro</td>
+                <td>Star Wars</td>
+                <td>Star Trek</td>
+                <td>Guardiões da Galaxia</td>
             </tr>
-            <tr>
-                <td>Carlos</td>
-                <td>Gladiador</td>
-                <td>300</td>
-                <td>Braveheart</td>
-            </tr>
-        </tbody>
     </table>
+
 </body>
 </html>
