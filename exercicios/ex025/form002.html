@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>    
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Digite seu nome">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="5" maxlength="20" size="15" placeholder="Digite sua senha">
+        </p>
+        <p> <input type="submit" value="enviar">
+            <input type="reset" value="limpar"></p>
+    </form>
+    <h2>Central de Cadastros</h2>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="nnome">Usuario:</label>
+            <input type="text" name="nome" id="nnome" required minlength="4"
+            maxlength="15" size="15" placeholder="Digite seu nome">
+        </p>
+        <p>
+            <label for="nendereco">Enderco:</label> 
+            <input type="text" name="endereco" id="nendereco" required minlength="5" 
+            maxlength="15" size="15" placeholder="Digite seu endereco">
+        </p> 
+            
+        <p>
+            <label for="ntelefone">Telefone</label>
+            <input type="text" name="telefone" id="ntelefone" required minlength="5" maxlength="15" size="15" placeholder="Digite seu Telefone">
+        </p>
+            
+        <p>
+            <label for="nestado">Estado</label>
+            <input type="text" name="estado" id="nestado" required minlength="5" 
+            maxlength="15" size="15" placeholder="Digite seu Estado">
+        </p>    
+        <p>
+            <input type="submit" value="cadastrar">                              <input type="reset" value="limpar"></p>
+    </form>
+
+    <h1>Novo Cadastro </h1>
+
+    <form action="" method="post" autocomplete="off">
+        <p>
+            <label for="icarro">Veiculo:</label>
+            <input type="text" name="carro" id="icarro" required minlength="5" maxlength="15" size="15" placeholder="Digite seu veiculo">
+        </p>
+        <p>
+            <label for="icor">Cor:</label>    
+            <input type="text" name="cor" id="icor" required minlength="5"
+            maxlength="15" size="15" placeholder="Digite a cor do veiculo">
+        </p>
+        <p>
+            <label for="iano">Ano:</label>
+            <input type="number" name="ano" id="iano" required minlength="5" 
+            maxlength="15" size="15" placeholder="Digite o ano">
+        </p>
+        <p>  
+            <input type="submit" value="validar">
+            <input type="reset" value="limpar">
+        </p>    
+    </form>
+
+    <h1>Teste de Matricula da Empresa</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+                <label for="nomes">Nome:</label>
+                <input type="text" name="nome" id="nomes" required minlength="5" 
+                maxlength="15" size="15" placeholder="Digite seu Nome">
+        </p>
+        <p>
+                <label for="sobrenomes">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenomes" required minlength="15" maxlength="15" size="15" placeholder="Digite seu Sobrenome">
+        </p>
+        <p>
+                <label for="idades">Idade:</label>
+                <input type="number" name="idade" id="idades" required minlength="5" maxlength="15" size="15" placeholder="Digite sua idade">           
+        </p>
+        <p>
+                <label for="cpfs">CPF:</label>
+                <input type="number" name="cpf" id="cpfs" required minlength="5" maxlength="15" size="15" placeholder="Digite seu CPF">    
+        </p>
+        <p>
+                <label for="sexos">Sexo:</label>
+                <input type="text" name="sexo" id="sexos" required minlength="5" maxlength="15" size="15" placeholder="Digite seu sexo">    
+        </p>
+        <p>
+                <label for="estados">Estado:</label>
+                <input type="text" name="estados" id="estados" required minlength="5" maxlength="15" size="15" placeholder="Digite seu Estado">
+        </p>
+        <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+        </p>
+    </form>
+
+    <h2>Cadastros de Clientes</h2>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="text" name="email" id="iemail" required minlength="5" maxlength="15" size="15" placeholder="Digite seu email">
+        </p>
+        <p>
+            <label for="iprofissao ">Profiss</label>
+            <input type="text" name="profissao" id="iprofissao" required minlength="5" maxlength="15" size="15" placeholder="Digite sua profissao">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+</body>
+</html>
