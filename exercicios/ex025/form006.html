@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Cadastro e atividades </h1>
+       
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+        <fieldset>
+            <legend>Dados do atleta</legend>
+               <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="name" id="inome" required placeholder="Digite seu nome">
+              </p>
+               <p>        
+                    <label for="inumero">CPF:</label>
+                    <input type="number" name="nun" id="inumero" required placeholder="Digite seu CPF">
+              </p>
+               <p>
+                 <span>Sexo:</span>
+                    <input type="radio" name="sexo" id="ismax" value="masculino" required>
+                    <label for="ismax">Masculino</label>
+                    
+                    <input type="radio" name="sexo" id="isfem" value="feminino" required>
+                    <label for="isfem">Feminino</label>
+              </p>
+               <p>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="Digite seu e-mail">
+               </p>
+                <p>
+                    <label for="iendereco">Endereço:</label>
+                    <input type="text" name="end" id="iendereco" required placeholder="Digite seu endereço">
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" required placeholder="Digite seu telefone">
+                </p>
+                </form>
+        </fieldset>
+            <fieldset>
+                <legend>Cursos Adicionais</legend>
+                <p>
+                    <label for="idiploma">Cursos e Certificados </label><br>
+                    <textarea name="dip" id="idiploma" cols="30" rows="3"></textarea> <br>
+                    
+                <fieldset>
+                    <legend>Tempo de Experiencia</legend>
+                    <input type="checkbox" name="tempo01" id="id01"> <label for="">0 a 1 ano</label><br>
+                    <input type="checkbox" name="tempo02" id="id02"> <label for="">1 a 2 anos</label><br>
+                    <input type="checkbox" name="tempo03" id="id03"> <label for="">2 a 5 anos</label><br>
+                    <input type="checkbox" name="tempo04" id="id05"> <label for="">5 a 10 anos</label><br>
+                    <input type="checkbox" name="tempo05" id="id010"> <label for="">Mais de 10 anos</label>
+                </fieldset>
+                </p>
+                <p>
+                    <label for="iobs">Observações:</label><br>
+                    <textarea name="obs" id="iobs" cols="30" rows="10" maxlength="500" ></textarea><br>                
+                </p>
+
+                <fieldset>
+                    <legend>Escolha seu esporte Favorito</legend>
+                    <input type="checkbox" name="bas" id="ibasquete"> <label for="ibasquete">Basquete</label><br>
+                    <input type="checkbox" name="fut" id="ifutebol"> <label for="ifutebol">Futebol</label><br>
+                    <input type="checkbox" name="nat" id="inatacao"> <label for="inatacao">Natração</label><br>
+                    <input type="checkbox" name="te" id="itenis"> <label for="itenis">Tenis</label><br>
+                    <input type="checkbox" name="jud" id="ijudo"> <label for="ijudo">Judo</label><br>
+                    <input type="checkbox" name="cic" id="iciclismo"> <label for="iciclismo">Ciclismo</label><br>
+                    <input type="checkbox" name="corr" id="icorrida"> <label for="icorrida">Corrida</label><br>
+                    <input type="checkbox" name="ginas" id="iginastica"> <label for="iginastica">Ginastica</label><br>
+                    <input type="checkbox" name="vole" id="ivolei"> <label for="ivolei">Volei</label><br>
+                    <input type="checkbox" name="car" id="corrida"> <label for="corrida">Corrida Car</label><br>
+                    <input type="checkbox" name="pat" id="patins"> <label for="patins">Patinação</label>
+                </fieldset>
+            </fieldset>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+</body>
+</html>

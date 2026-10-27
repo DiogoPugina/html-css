@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Cadastro de clientes</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="aemail"> E-mail</label>
+            <input type="email" name="email" id="aemail" autocomplete="email" required placeholder="Digite seu nome">
+        </p>
+        <p>
+            <label for="itelefone">Telefone:</label>
+            <input type="tel" name="fone" id="itelefone" autocomplete="tel" required minlength="8" maxlength="15" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"  placeholder="(xx)xxxx-xxxx"> <!--Caso queira com () e -  -->
+                <!--   Caso queira corrido sem () e sem -  "^ \d{10,11}$">    -->
+                <!--   Caso queira com () "^\(\d{2}\d{9,10})$"-->
+                <!--   Caso queira com - "^\d{5}-\d{4}$"-->
+                <!--   Caso queira completo padão brasil "^\(\d{2}\)\d{4,5}-\d{4}$"-->
+                   <!--codigos pattern+" ^\(\d{2})\d{4,5}-\d{4}$ "-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+    
+</body>
+</html>

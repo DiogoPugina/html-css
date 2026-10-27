@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios para Cadastros</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> 
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" minlength="3" maxlength="50" required placeholder="Digite seu nome completo">
+            </p>
+            <p>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="end" id="endereco" minlength="3" maxlength="35" required placeholder="Digite seu endereço">
+            </p>
+            <p>
+                <label for="e-mail-usuario">e-mail:</label>
+                <input type="email" name="email" id="e-mail-usuario" minlength="3" maxlength="35" required placeholder="Digite seu email">
+            </p>
+            <p>
+                <label for="telefone-usuario">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone-usuario" required placeholder="(xx)xxxxx-xxxx">
+            </p>
+            <p>
+                <label for="sexo">Sexo:</label>
+                <input type="text" name="sex" id="sexo" minlength="3" max="35" required placeholder="Digite seu sexo">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Tabela de Esportes 2026</legend>
+            <input type="checkbox" name="fut" id="futebol"> <label for="futebol">Futebol:</label><br>
+            <input type="checkbox" name="bas" id="basquete"> <label for="basquete">Basquete:</label><br>
+            <input type="checkbox" name="nat" id="natacao"> <label for="natacao">Natação:</label><br>
+            <input type="checkbox" name="bike" id="bicicleta"> <label for="bicicleta">Bicileta:</label><br>
+            <input type="checkbox" name="luta" id="artes marciais"> <label for="artes marciais">Artes Marciais:</label><br>
+            <input type="checkbox" name="tiro" id="tiro ao alvo"> <label for="tiro ao alvo">Tiro ao Alvo:</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
