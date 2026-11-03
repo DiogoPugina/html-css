@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iestado">
+                
+                <option value="" selected> --Escolha o estado-- </option>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                
+                <optgroup label ="Região Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AP">Amapá</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="ENG">Engenheiro</option>
+                <option value="MED">Medico</option>
+                <option value="PROF">Professor</option>
+                <option value="FAR">Farmaceutico</option>
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+        
+        <h1>Exemplo de Formulario 02</h1>
+        <p>
+            <label for="nestado">Estados do Brasil:</label>
+            <select name="est" id="nestado">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="Rj">Rio de Janeiro</option>
+                    <option value="MG">Minas</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+
+                <optgroup label="Região Centro-Oeste">
+                    <option value="GO">Goias</option>
+                    <option value="MT">Mato Grosso do Sul</option>
+                    <option value="MS">Mato Grosso</option>
+                    <option value="DS">Distrito Federal</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AP">Amapá</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="nlprof">Profissões:</label>
+            <input type="text" name="trab" id="nlprof" list="lscadastro">
+            <datalist id="lscadastro">
+                <option value="CONSt">Pedreiro</option>
+                <option value="MEC">Mecanico</option>
+                <option value="ELE">Eletricista</option>
+                <option value="ENC">Encanador</option>
+                <option value="PINT">Pintor</option>
+                <option value="MOT">Motorista</option>
+                <option value="FAX">Faxineiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="ncurso">Cursos:</label>
+            <input type="text" name="curso" id="ncurso" list="lscursos">
+            <datalist id="lscursos">
+                <option value="INF">Informatica</option>
+                <option value="ADM">Administracao</option>
+                <option value="ENG">Engenharia</option>
+                <option value="MED">Medicina</option>
+                <option value="FAR">Farmacia</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+        <h1>Exemplo de Formulario 02</h1>
+        <p>
+            <label for="icarro">Carros</label>
+            <input type="text" name="car" id="icarro" list="lscarros">
+            <datalist id="lscarros">
+                <option value="VW">Gol</option>
+                <option value="GM">Corsa</option>
+                <option value="FIAT">Palio</option>
+                <option value="FORD">Fiesta</option>
+                <option value="HONDA">Civic</option>
+            </datalist>
+        </p>
+    </form>
+</body>
+</html>
