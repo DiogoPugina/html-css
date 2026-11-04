@@ -6,8 +6,8 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Exemplo de Formulario</h1>
-    <form action="cadastro.php" method="get">
+    <h1>Estados e Capitáis do Brasil</h1>
+    <form action="cadastro.php" method="post">
         <p>
             <label for="iest">Estado:</label>
             <select name="estado" id="iestado">
@@ -55,21 +55,12 @@
                     <option value="PB">Paraíba</option>
                     <option value="PE">Pernambuco</option>
                 </optgroup>
-
             </select>
         </p>
+        
         <p>
-            <label for="iprof">Profissão: </label>
-            <input type="text" name="prof" id="iprof" list="lstprof">
-            <datalist id="lstprof">
-                <option value="ADM">Administrador</option>
-                <option value="CONT">Contador</option>
-                <option value="DEV">Desenvolvedor</option>
-                <option value="ENG">Engenheiro</option>
-                <option value="MED">Medico</option>
-                <option value="PROF">Professor</option>
-                <option value="FAR">Farmaceutico</option>
-            </datalist>
+            <label for="imsg">Obs:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="8" placeholder="digite sua menssagem"></textarea>
         </p>
 
         <p>
@@ -125,16 +116,16 @@
             </select>
         </p>
         <p>
-            <label for="nlprof">Profissões:</label>
-            <input type="text" name="trab" id="nlprof" list="lscadastro">
-            <datalist id="lscadastro">
-                <option value="CONSt">Pedreiro</option>
-                <option value="MEC">Mecanico</option>
-                <option value="ELE">Eletricista</option>
-                <option value="ENC">Encanador</option>
-                <option value="PINT">Pintor</option>
-                <option value="MOT">Motorista</option>
-                <option value="FAX">Faxineiro</option>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Engenheiro</option>
+                <option>Medico</option>
+                <option>Professor</option>
+                <option>Farmaceutico</option>
             </datalist>
         </p>
         <p>
@@ -149,11 +140,15 @@
             </datalist>
         </p>
         <p>
+            <label for="amens">Obs:</label><br>
+            <textarea name="mesn" id="amens" cols="30" rows="8" placeholder="digite sua menssagem"></textarea>
+        </p>
+        <p>
             <input type="submit" value="enviar">
             <input type="reset" value="limpar">
         </p>
 
-        <h1>Exemplo de Formulario 02:</h1>
+        <h1>Selecione um Veiculo:</h1>
         <p>
             <label for="icarro">Carros</label>
             <input type="text" name="car" id="icarro" list="lscarros">
@@ -165,6 +160,27 @@
                 <option value="HONDA">Civic</option>
             </datalist>
         </p>
+        <p>
+            <label for="imen">Obs:</label><br>
+            <textarea name="men" id="imen" cols="30" rows="8" placeholder="deixe sua menssagem"></textarea>
+        </p>
+        <h1>Exemplo de Profissões:</h1>
+        <p>
+            <label for="">Escolha sua Profissão</label>
+            <input type="text" name="forfissao" id="iprofissao" list="listaprofissao">
+            <datalist id="listaprofissao">
+                <option value="EF">Enfermeiro</option>
+                <option value="MED">Medico</option>
+                <option value="ENG">Engenheiro</option>
+                <option value="ADM">Administrador</option>
+                <option value="PRO">Professor</option>
+                <option value="FAR">Farmaceutico</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>        
     </form>
 </body>
 </html>
